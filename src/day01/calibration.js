@@ -11,7 +11,7 @@ function getInputStream() {
 
 function parseLine(inputLine) {
     let lineOut = "";
-    
+
     // Find the first number in the line
     for (let i = 0; i < inputLine.length; i++) {
         if (NUMBERS.includes(inputLine[i])) {
@@ -48,7 +48,7 @@ function main() {
 
     // Sum the line values
     let sum = lineValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    
+
     console.log(sum);
 }
 
