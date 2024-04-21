@@ -44,20 +44,29 @@ function main(): void {
     let lineValues: number[] = [];
     let inputArray: string[] = getInputArry();
 
-    inputArray.forEach(line => {
-        let currentGame: number = 0;
-        if (line.length > 0){
-            currentGame = parseLine(line)
-            lineValues.push(currentGame);
-            console.log(currentGame)
-        }
-        else{
-            console.log(line)
-        }
-    });
+    // inputArray.forEach(line => {
+    //     let currentGame: number = 0;
+    //     if (line.length > 0){
+    //         currentGame = parseLine(line)
+    //         lineValues.push(currentGame);
+    //         console.log(currentGame)
+    //     }
+    //     else{
+    //         console.log(line)
+    //     }
+    // });
 
-    let sum: number = lineValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    let inputLine = inputArray[54]
 
+    let gameId: string = inputLine.split(":")[0]
+    let gameRecord: string[] = inputLine.split(":")[1].split(";")
+
+    console.log(gameId)
+    console.log(gameRecord)
+
+    // let sum: number = lineValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+    let sum = 0
     console.log('\n--------\nTotal:');
     console.log(sum);
 }
