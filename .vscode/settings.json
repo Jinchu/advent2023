@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Zenburn In Grays - Cold - Sugar Paper",
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#210249" // pick your color here
+    },
+}
